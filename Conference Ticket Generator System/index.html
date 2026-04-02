@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Conference Ticket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Coding Conference</h1>
+    <h2>Your Journey to Coding Conference 2026 start here!</h2>
+    <div class="tagline">Start your journey for next year coding conference here!</div>
+
+    <div class="drop-zone" onclick="document.getElementById('fileInput').click()">
+      <p>Drag & Drop Profile Photo or Click to Upload</p>
+      <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label>GitHub Username</label>
+      <input type="text" placeholder="Enter your GitHub username">
+    </div>
+
+    <button class="btn">Generate My Ticket</button>
+
+    <div class="footer">
+      Powered by Your Conference System
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

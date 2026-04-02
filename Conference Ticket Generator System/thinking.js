@@ -25,4 +25,7 @@
 // 9. Means, the main problem is, binary file cannot get stored in the local storage due to the storage type as string. So it means, we need to process and convert the binary file into a string to make it store to the local storage!
 // 10. Mistakes what you might do, trying to do this "localStorage.setItem("image", file);" which will result in storing - "[object File]" and now if you think you are smart and try to do localStorage.getItem("image") you will get a string - "[object File]"
 // 11. So what we can actually do, we will actually convert this image into a string - Now we need a base64 encoding of the image, which will help to convert the image binary data into a string.
-// 12. 
+// 12. So, now we can store that string converted image into a the local or session storage, that's upto me, if you know about local storage and session storage, what are there differences! Right now we will store this string into the local storage!
+// 13. Now, we will simply navigate to the new html page and will get the stored values from the local storage and will simply render it on the ticket UI
+
+// After this, the rest you have to just convert this thinking into Javascript code!

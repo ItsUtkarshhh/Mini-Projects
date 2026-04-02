@@ -46,7 +46,7 @@ generateBtn.addEventListener('click', function() {
     const reader = new FileReader();
 
     reader.onload = function (e) {
-        const imageBase64 = e.target.result;
+        const imageBase64 = e.target.result; // or const imageBase64 = reader.result
         const userData = {
             name,
             email,
@@ -60,13 +60,4 @@ generateBtn.addEventListener('click', function() {
     };
 
     reader.readAsDataURL(file);
-    const imageBase64 = e.target.result;
-    const userData = {
-        name,
-        email,
-        github,
-        image: imageBase64
-    };
-    localStorage.setItem("ticketData", JSON.stringify(userData));
-    window.location.href = "ticket.html";
 });

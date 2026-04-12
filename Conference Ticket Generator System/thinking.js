@@ -29,3 +29,15 @@
 // 13. Now, we will simply navigate to the new html page and will get the stored values from the local storage and will simply render it on the ticket UI
 
 // After this, the rest you have to just convert this thinking into Javascript code!
+
+// Enhancements -
+// 1. Add email, github username validations - by asking to enter OTP that are sent to the their respective IDs
+// 2. Display the compressed uploaded image
+// 3. User cannot click on generate ticket button, until does not satisify all the fields are correctly updated
+// 4. User cannot simply navigate to the final ticket UI page
+// 5. In the ticket UI page the user will also get a QR code, which will have the ticket ID for verification
+// 6. Optimize the code and use latest modern ways
+// 7. Ensure good memory management
+// 8. Provide security from any possible security threats.
+// 9. Scale this ticket generator upto the real world level
+// 10. If the user does not input an image of there's then we can simply show some avatars instead on the place of image.

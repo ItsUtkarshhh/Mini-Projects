@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coding Conference Ticket</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conference Ticket Generator</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="container">
-    <h1>Coding Conference</h1>
-    <h2>Your Journey to Coding Conference 2026 start here!</h2>
-    <div class="tagline">Start your journey for next year coding conference here!</div>
 
-    <div class="drop-zone" onclick="document.getElementById('fileInput').click()">
-      <p>Drag & Drop Profile Photo or Click to Upload</p>
-      <input type="file" id="fileInput" accept="image/*">
+    <!-- Header -->
+    <header class="header">
+      <h1>🎟️ Coding Conference 2026</h1>
+      <p class="subtitle">
+        Generate your personalized conference ticket
+      </p>
+    </header>
+
+    <!-- Form Card -->
+    <div class="card">
+
+      <!-- Avatar Section -->
+      <section class="avatar-section">
+        <h3>Choose Your Avatar</h3>
+
+        <div class="avatar-options">
+          <img src="assets/avatar1.jpg" class="avatar" alt="avatar1">
+          <img src="assets/avatar2.jpg" class="avatar" alt="avatar2">
+          <img src="assets/avatar3.jpg" class="avatar" alt="avatar3">
+          <img src="assets/avatar5.jpg" class="avatar" alt="avatar4">
+          <img src="assets/avatar4.jpg" class="avatar" alt="avatar5">
+        </div>
+
+        <p class="divider">OR</p>
+
+        <!-- Upload Section -->
+        <div class="upload-box" id="uploadBox">
+          <p>Upload your image</p>
+          <input type="file" id="fileInput" accept="image/*" hidden />
+          <button type="button" id="uploadBtn">Choose File</button>
+        </div>
+
+        <!-- Image Preview -->
+        <div class="preview-container">
+          <img id="previewImage" src="" alt="Preview" />
+        </div>
+      </section>
+
+      <!-- Form Section -->
+      <section class="form-section">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="github">GitHub Username</label>
+          <input id="github" type="text" placeholder="Enter your GitHub username" />
+        </div>
+
+      </section>
+
+      <!-- CTA -->
+      <button class="btn-primary" id="generateBtn">
+        Generate My Ticket 🚀
+      </button>
+
     </div>
 
-    <div class="form-group">
-      <label>Full Name</label>
-      <input type="text" placeholder="Enter your full name">
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Coding Conference • Built with ❤️</p>
+    </footer>
 
-    <div class="form-group">
-      <label>Email Address</label>
-      <input type="email" placeholder="Enter your email">
-    </div>
-
-    <div class="form-group">
-      <label>GitHub Username</label>
-      <input type="text" placeholder="Enter your GitHub username">
-    </div>
-
-    <button class="btn">Generate My Ticket</button>
-
-    <div class="footer">
-      Powered by Your Conference System
-    </div>
-
-    <script src="script.js"></script>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

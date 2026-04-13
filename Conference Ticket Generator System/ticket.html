@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ticket.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Conference Ticket</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="ticket.css" />
 </head>
+
 <body>
-    <img id="userImage" class="profile-img" src="" alt="User Image">
-    <h2 id="userName">Name</h2>
-    <p id="userEmail" class="email">email@example.com</p>
-    <p id="userGithub" class="github">@github</p>
-    <div class="divider"></div> <p class="ticket-id" id="ticketId"></p>
-    <div class="badge">🎫 Entry Pass</div>
-    <button class="btn" onclick="goBack()">Generate Another</button>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>🎟️ Your Ticket</h1>
+      <p class="subtitle">Welcome to Coding Conference 2026</p>
+    </header>
+
+    <!-- Ticket Card -->
+    <div class="ticket-card">
+
+      <!-- Top Section -->
+      <div class="ticket-header">
+        <h2>Coding Conference 2026</h2>
+        <span class="badge">🎫 Entry Pass</span>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img id="userImage" class="profile-img" src="" alt="User Image">
+
+        <div class="user-info">
+          <h3 id="userName">Name</h3>
+          <p id="userEmail" class="email">email@example.com</p>
+          <p id="userGithub" class="github">@github</p>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Ticket Info -->
+      <div class="ticket-info">
+        <p class="label">Ticket ID</p>
+        <p class="ticket-id" id="ticketId">#CONF12345</p>
+      </div>
+
+    </div>
+
+    <!-- Action -->
+    <button class="btn-primary" onclick="goBack()">
+      Generate Another 🔁
+    </button>
+
+  </div>
+
+  <script src="ticket.js"></script>
 </body>
 </html>
